@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: black;
+}
+
+.fa-bars {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  cursor: default;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  transform: translate(1.1);
+  color: red;
+}
+
+.push {
+  margin-left: auto;
+}
+
+header {
+  display: flex;
+  background-image: url("https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-blend-mode: multiply;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.container {
+  color: white;
+  width: 50%;
+}
+
+.container h1 {
+  font-size: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container h1:hover {
+  transform: translate(1.1);
+  color: red;
+}
+
+.container p {
+  font-size: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container p:hover {
+  transform: translate(1.1);
+  color: red;
+}
+
+.container button {
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container button:hover {
+  transform: translate(1.1);
+  color: #fff;
+  background-color: #C06B3E;
+}
+
+.button2 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .fa-bars {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .container {
+    border-style: solid;
+    border-radius: 10px;
+    width: auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .container p {
+    font-size: 20px;
+  }
+
+  .container .button1 {
+    display: none;
+  }
+
+  .container .button2 {
+    display: block;
+    color: white;
+    background-color: #C06E3E;
+  }
+}
